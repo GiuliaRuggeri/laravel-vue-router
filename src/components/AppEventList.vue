@@ -23,6 +23,7 @@ export default {
                         <div class="card-header">{{ event.date }}</div>
                         <div class="card-body">
                             <h5 class="card-title">{{ event.name }}</h5>
+                            <p v-for="tag in event.tags">{{ tag.name }}</p>
                             <h6 class="card-subtitle mb-2 text-muted">{{ event.user.name }}</h6>
                             <p class="card-text">There are still <b>{{ event.available_tickets }}</b> tickets available.
                             </p>
