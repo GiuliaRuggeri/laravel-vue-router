@@ -50,6 +50,7 @@ export default {
                 </h6>
                 <p class="card-text">There are still <b>{{ this.eventDetails.available_tickets }}</b> tickets available.
                 </p>
+                <span v-for="tag in this.eventDetails.tags" class="badge bg-danger text-black me-2">{{ tag.name }}</span>
             </div>
             </div>
             
