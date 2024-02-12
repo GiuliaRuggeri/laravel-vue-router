@@ -15,6 +15,10 @@ export default {
                 {
                     routeName: "events",
                     label: "Events"
+                },
+                {
+                    routeName: "tags",
+                    label: "Tags"
                 }
             ]
         }
