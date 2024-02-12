@@ -16,6 +16,11 @@ export default {
         >
           <span class="badge bg-danger text-black me-2">{{ event.name }}</span>
         </router-link>
+        <router-link
+        :to="{ name: 'tag-detail', params: { id: tag.id } }"
+        >
+        <div class="btn btn-primary">Go to details</div>
+        </router-link>
       </div>
     </div>
   </div>

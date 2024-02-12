@@ -1,7 +1,7 @@
 <script>
 import { store } from "../store";
 import axios from "axios";
-import TagCard from "../components/TagCard.vue";
+import TagCard from "../components/TagCard.vue"
 
 export default {
   name: "TagList",
@@ -45,6 +45,7 @@ export default {
       <div class="row">
         <h1>Tags list</h1>
         <TagCard v-for="tag in store.tagList" :tag="tag"/>
+
       </div>
     </div>
   </div>
